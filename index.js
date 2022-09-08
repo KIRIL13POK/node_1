@@ -25,6 +25,9 @@
   */
 
   app.get("/", (req, res) => {
+    // petición a BD
+    if (true) res.render(stranica)
+    else res.render(PNH)
     res.render("index", { title: "Home" });
   });
 
